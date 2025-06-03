@@ -1,0 +1,31 @@
+.container{
+    width: 1000px;
+    height: auto;
+    background-color: rgb(227, 224, 255);
+    margin: auto;
+}
+.header{
+    width: 1000px;
+    height: 100px;
+    background-color: aquamarine;
+}
+.content{
+    width:750px;
+    height:250px;
+    float: left;
+    background-color: blueviolet;
+}
+.sidebar{
+    width:250px;
+    height: 250px;
+    background-color: blanchedalmond;
+    float:right ;
+}
+.footer{
+    width: 1000px;
+    height:50px;
+    background-color: cadetblue;
+}
+.clear-fix{
+    clear: both;
+}
