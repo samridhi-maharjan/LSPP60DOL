@@ -1,0 +1,18 @@
+.box{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: blanchedalmond;
+    display:flex;
+    /* justify-content: center; */ /*justify for horizontal arrangements*/
+    /* justify-content: end; */
+    /* align-items: center; */      /*align items for vertical*/
+    justify-content: center;
+    align-items: center;
+}
+.box-item{
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    border: 1px solid black;
+}

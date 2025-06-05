@@ -1,0 +1,13 @@
+.box{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: darkblue;
+    display: flex;
+}
+.box-item{
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    border: 1px solid black;
+}
