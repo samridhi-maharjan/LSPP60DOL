@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Meow Meow</title>
 </head>
@@ -37,10 +38,10 @@
           </nav>
           <!-- banner slider -->
            <section class="banner-slider">
-                <ul>
-                    <li><img src="https://placehold.co/1000x350/png"></li>
-                    <li><img src="https://placehold.co/1000x350/png"></li>
-                    <li><img src="https://placehold.co/1000x350/png"></li>
+                <ul id="adaptive">
+                    <li><img src="https://i.pinimg.com/736x/72/b2/fd/72b2fd1c86cfaa0aef552de125e8fce1.jpg" width="1000px"></li>
+                    <li><img src="https://i.pinimg.com/736x/94/02/34/94023466d38afb9db0b78230e1938592.jpg" width="1000px"></li>
+                    <li><img src="https://i.pinimg.com/736x/3e/4f/f5/3e4ff59702f956dba87e8ab57c92b48b.jpg" width="1000px"></li>
                 </ul>
            </section>
            <!-- content holder -->
@@ -70,7 +71,7 @@
                 <div class="footer-widget">
                     <a href="/media/cutecat.jpg" height="30px" width="30px"></a>
                     <h3>address</h3>
-                    <address>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quasi alias magnam vel id cupiditate sunt perspiciatis hic corrupti cumque repudiandae quidem aperiam, quam ipsa officiis commodi! Odio, maiores ullam?</address>
+                    <address>Lorem ipsum, dolor sit amet </address>
                 </div>
                 <div class="footer-widget">
                     <h4>site-map</h4>
@@ -86,5 +87,17 @@
                 <p><small>copyright &copy</small></p>
              </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>  <!--idk what this does, it is required for making banner slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('#adaptive').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+    });
+});
+    </script>
 </body>
 </html>
