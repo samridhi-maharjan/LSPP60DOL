@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meow Meow</title>
+</head>
+<body>
+    <div class="container">
+        <!-- main header -->
+         <header class="header">
+            <!-- logo holder -->
+             <div class="logo-holder">
+                <a href="">
+                    <img src="https://i.pinimg.com/736x/6a/3b/e0/6a3be0cd9c8f4c035207e319c9d4130d.jpg" alt="" width="40px" height="40px">
+                </a>
+             </div>
+             <div class="search">
+                <form action="" method="get">
+                    <input type="search" placeholder="search">
+                    <button type="submit">🔍</button>
+                </form>
+             </div>
+         </header>
+         <!-- navigation -->
+          <nav class="main-menu">
+            <ul class="mobile-menu">
+                <li><a href="">Menu</a></li>
+                <li><a href="" class="toggler">+</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="#">Photos</a></li>
+            </ul>
+          </nav>
+          <!-- banner slider -->
+           <section class="banner-slider">
+                <ul id="adaptive">
+                    <li><img src="https://i.pinimg.com/736x/72/b2/fd/72b2fd1c86cfaa0aef552de125e8fce1.jpg" width="1000px"></li>
+                    <li><img src="https://i.pinimg.com/736x/94/02/34/94023466d38afb9db0b78230e1938592.jpg" width="1000px"></li>
+                    <li><img src="https://i.pinimg.com/736x/3e/4f/f5/3e4ff59702f956dba87e8ab57c92b48b.jpg" width="1000px"></li>
+                </ul>
+           </section>
+           <!-- content holder -->
+            <section class="content-holder">
+                <main class="content">
+                    <h1>CUTE CATS</h1>
+                    <h5>meow meow meow</h5>
+                    <p>meow meow meow meeowww wi wi wi wi meow owa owa owa owa wa wa wa mi mi mi mi miii mi mi mi</p>
+                </main>
+                <aside class="sidebar">
+                    <div class="widget">
+                        <!-- <h3>follow us</h3>
+                        <ul>
+                            <li><a href="">facebook</a></li>
+                            <li><a href="">inatagram</a></li>
+                            <li><a href="">twitter</a></li>
+                        </ul> -->
+                        <img src="https://i.pinimg.com/736x/29/41/b0/2941b0a266c0fc1cb388429315b9ccf9.jpg" alt="">
+                    </div>
+                </aside>
+            </section>
+            <!-- footer  -->
+             <section class="footer-widget-holder">
+                <div class="footer-widget">
+                    <a href="/media/cutecat.jpg" height="30px" width="30px"></a>
+                    <h3>address</h3>
+                    <address>Lorem ipsum, dolor sit amet </address>
+                </div>
+                <div class="footer-widget">
+                    <h4>site-map</h4>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="#">Photos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>site-map</h4>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="#">Photos</a></li>
+                    </ul>
+                </div>
+             </section>
+             <footer class="site-footer">
+                <p><small>copyright &copy</small></p>
+             </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>  <!--idk what this does, it is required for making banner slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('#adaptive').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+    });
+     $('main-menu > ul:nth-of-type(2)').toggle().hide();
+    $('.toggler').click(function(){
+        $('.main-menu > ul:nth-of-type(2)').toggle();
+    });
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+
+*{
+  font-family: "Noto Sans", sans-serif;
+}
+body{
+    margin: 0px;
+    background-color: rgb(255, 236, 239);
+}
+.container{
+    max-width: 1000px;
+    width: 98%;
+    height: auto;
+    margin: 10px auto;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 223, 228);
+    box-shadow: 0px 0px 25px rgb(255, 181, 181);
+} 
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+.search form>input{
+    padding: 10px;
+    border: 1px solid rgb(255, 181, 181);
+    border-radius: 16px 0px 0px 16px;
+}
+.search form button{
+    padding: 10px;
+    background-color: rgb(255, 217, 217);
+    border: 1px solid rgb(255, 181, 181);
+    border-radius:0px 16px 16px 0px;
+    margin-left: -5px;
+}
+/* .search form button:hover{
+    transform: translateY(2px);
+} */
+/* nav */
+.main-menu{
+    background-color: black;
+    color: white;
+}
+.main-menu >ul{
+    padding: 0px;
+    display: flex;
+    margin: 0px;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.main-menu ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display:inline-block;
+}
+.main-menu ul li a:hover{
+    color: pink;
+    /* background-color: grey;
+    border: 1px solid white;
+    padding:15px ; */
+    transform: translateY(2px);
+}
+ul.lSPager.lSpg {
+    margin: -25px !important;
+}
+.content-holder{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 236, 239);
+    border-bottom: 1px solid rgb(124, 124, 124);
+}
+.content-holder .content{
+    padding: 25px;
+    background-color: white;
+    width: 80%;
+}
+.content-holder .content h1~h5{
+    font-size: 1em;
+    color: darkgray;
+}
+.sidebar{
+    padding: 25px;
+    width: 20%;
+}
+.sidebar .widget>img{
+    width:100%;
+    height: auto;
+    margin-left:-25px;
+}
+/* .sidebar .widget ul, */
+.footer-widget ul
+{
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+}
+/* .sidebar .widget ul li a, */
+.footer-widget ul li a{
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+}
+.footer-widget-holder{
+    display: flex;
+    background-color: rgb(195, 193, 193);
+    color: white;
+    justify-content: space-around;
+}
+.footer-widget{
+    padding:25px;
+    font-size: small;
+}
+.site-footer{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+.site-footer p{
+    margin: 0px;
+}
+/* responsive header */
+@media screen and (max-width:800px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* responsive nav bar */
+/* mobile menu */
+@media screen and (max-width:750px)  {
+    .header{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+    }
+    .mobile-menu{
+        display: flex !important;
+        justify-content: space-between !important;   
+    }
+    .main-menu> ul:nth-of-type(2){
+        flex-direction: column;
+        border-top: 1px solid rgb(255, 255, 255);
+    }
+    #adaptive img{
+        width:100% ;
+    }
+}
