@@ -1,0 +1,16 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    background-color: rgb(220, 222, 255);
+    padding: 25px;
+    color: rgb(81, 81, 81);
+}
+@media screen and (max-width: 500px) {
+    .container{
+        background-color:teal;
+    }
+}
