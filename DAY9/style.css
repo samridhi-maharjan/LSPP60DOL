@@ -54,17 +54,9 @@
 .header .banner h4{
     font-weight:lighter;
     position: absolute;
-    top: 140px;
-    left: 30px;
-    color: rgb(40, 58, 0);
-    font-family:monospace;
-}
-.header .banner h3{
-    font-weight:lighter;
-    position: absolute;
     top: 180px;
     left: 30px;
-    color: rgb(255, 255, 255);
+    color: rgb(235, 235, 235);
     font-family:'Times New Roman', Times, serif;
     background-color: rgb(0, 0, 0);
     padding: 10px;
@@ -74,6 +66,48 @@
     position: absolute;
     top: 210px;
     left: 180px;
-    color: rgb(255, 237, 103);
+    color: rgb(255, 225, 0);
     font-family:'Times New Roman', Times, serif;
+}
+/* content */
+.content{
+    margin: 30px;
+}
+.content .heading h2,p{
+    padding-left: 30px;
+}
+.card-holder{
+    display: flex;
+    margin-top: 50px;
+}
+.card-holder .card{
+    border: 1px solid black;
+    margin: 20px;
+    border-radius:6px ;
+    box-shadow: 0px 10px 10px 0px rgb(201, 201, 201);
+    margin-bottom: 80px;
+}
+.card-holder .card img{
+    justify-self: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 220px;
+}
+.card-holder .card .abs{
+    justify-self: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.card-holder .card h5{
+    text-align: center;
+}
+.card-holder .card p{
+    text-align: center;
+    margin-right: 15px;
+}.content .heading a{
+    margin:60px 0px 0px 30px ;
+    padding-top: 60px;
 }
