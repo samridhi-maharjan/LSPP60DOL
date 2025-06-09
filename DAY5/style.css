@@ -81,6 +81,11 @@ ul.lSPager.lSpg {
     padding: 25px;
     width: 20%;
 }
+.sidebar .widget img{
+    width: 128%;
+    height: auto;
+    margin-left:-25px;
+}
 .sidebar .widget ul,
 .footer-widget ul
 {
